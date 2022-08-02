@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/easyModeFragment"
+        android:name="com.kursatdrhistoryapp.catchthepuppy.ui.fragment.EasyModeFragment"
+        android:label="fragment_easy_mode"
+        tools:layout="@layout/fragment_easy_mode" >
+        <action
+            android:id="@+id/action_easyModeFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/hardModeFragment"
+        android:name="com.kursatdrhistoryapp.catchthepuppy.ui.fragment.HardModeFragment"
+        android:label="fragment_hard_mode"
+        tools:layout="@layout/fragment_hard_mode" >
+        <action
+            android:id="@+id/action_hardModeFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.kursatdrhistoryapp.catchthepuppy.ui.fragment.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="point"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_resultFragment_to_startFragment"
+            app:destination="@id/startFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.kursatdrhistoryapp.catchthepuppy.ui.fragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_easyModeFragment"
+            app:destination="@id/easyModeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_startFragment_to_hardModeFragment"
+            app:destination="@id/hardModeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+</navigation>
