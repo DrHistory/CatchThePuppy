@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070936"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.fragment.HardModeFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="-20dp"
+            android:background="@mipmap/timeandscorepanel"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/timeicon"></ImageView>
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="48dp"
+                android:text="Time: 0"
+                android:textColor="#fff"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="-40dp"
+            android:background="@mipmap/timeandscorepanel"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/scoreicon"></ImageView>
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="48dp"
+                android:text="Score: 0"
+                android:textColor="#fff"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="450dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="74dp"
+        android:background="@mipmap/gamepanel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/hardimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView16"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView17"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView18"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView19"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView20"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+            <ImageView
+                android:id="@+id/hardimageView12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+            <ImageView
+                android:id="@+id/hardimageView15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:onClick="puppyClick"
+                app:srcCompat="@drawable/puppyphoto" />
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
